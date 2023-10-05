@@ -3,7 +3,18 @@
 	margin:20px;
 	
 }
-span{
-	color:#f00;
-	font-size:20px;
+#container::before,
+#container::after {
+    content: "Inserted Content";
+    color: #f00;
+    font-size: 20px;
+    position: absolute;
+}
+
+#container::before {
+    left: 0;
+}
+
+#container::after {
+    right: 0;
 }
